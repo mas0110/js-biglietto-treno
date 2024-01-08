@@ -7,18 +7,18 @@ console.log( numerokm + " "+ età)
 
 // prezzo totale del biglietto
 
-var prezzokm = 0.21;
+const prezzokm = 0.21;
 
 console.log(numerokm * prezzokm)
 
-var prezzo = numerokm * prezzokm;
+let prezzo = numerokm * prezzokm;
 
 
 // prezzo totale del biglietto con sconti applicati
 
-var prezzo20 = prezzo - prezzo / 100 * 20;
+let prezzo20 = prezzo - prezzo / 100 * 20;
 
-var prezzo40 = prezzo - prezzo / 100 * 40;
+let prezzo40 = prezzo - prezzo / 100 * 40;
 
 if (età < 18) {
   document.getElementById("finalprice").innerHTML = 'Il prezzo del suo biglietto è di ' + prezzo20.toFixed(2) + '€ con sconto del 20% per under 18';
